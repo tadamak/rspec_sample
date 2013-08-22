@@ -48,3 +48,21 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'pry-rails'
+  gem 'pry-debugger'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'spring'
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'guard'
+  gem 'guard-rspec'
+end
