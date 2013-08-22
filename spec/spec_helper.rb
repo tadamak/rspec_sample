@@ -16,6 +16,9 @@ RSpec.configure do |config|
   # devise test helper
   config.include Devise::TestHelpers, type: :controller
 
+  # Include Factory Girl syntax to simplify calls to factories
+  config.include FactoryGirl::Syntax::Methods
+
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
